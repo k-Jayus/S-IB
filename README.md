@@ -1,10 +1,10 @@
-# D-IB: Disentangled Information Bottleneck Training Method
+# S-IB: Spatial Information Bottleneck Training Method
 
-This repository contains 20 training scripts implementing our Disentangled Information Bottleneck (D-IB) method across 5 datasets and 4 model architectures. All scripts share identical core D-IB logic.
+This repository contains 20 training scripts implementing our Disentangled Information Bottleneck (S-IB) method across 5 datasets and 4 model architectures. All scripts share identical core S-IB logic.
 
 ## Core Method Components
 
-Our D-IB method consists of 3 key components:
+Our S-IB method consists of 3 key components:
 
 ### 1. VJP-based Gradient Reconstruction
 
@@ -187,7 +187,7 @@ where ⊙ denotes element-wise multiplication and M is the binary mask.
 ### Hyperparameter Configuration
 
 ```python
-# D-IB hyperparameters
+# S-IB hyperparameters
 lambda_fg = 0.01          # Foreground loss weight
 lambda_bg = 1000          # Background loss weight
 window_size = 31         # Integral density window
@@ -203,4 +203,5 @@ hsic_rand_feat = None    # Optional: use random projection (e.g., 512)
 torch>=1.10.0
 torchvision>=0.11.0
 numpy>=1.19.0
+
 ```
