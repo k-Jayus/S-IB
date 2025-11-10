@@ -1,6 +1,6 @@
 # S-IB: Spatial Information Bottleneck Training Method
 
-This repository contains 20 training scripts implementing our Disentangled Information Bottleneck (S-IB) method across 5 datasets and 4 model architectures. All scripts share identical core S-IB logic.
+This repository contains 20 training scripts implementing our Disentangled Information Bottleneck (S-IB) method across 5 datasets and 4 model architectures. All scripts share identical core S-IB logic.We also provide the pretrained weights of DenseNet‑121 on the CUB‑200 dataset to facilitate reproducibility.
 
 ## Core Method Components
 
@@ -205,3 +205,4 @@ torchvision>=0.11.0
 numpy>=1.19.0
 
 ```
+
